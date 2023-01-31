@@ -19,7 +19,7 @@ EMAIL = "Aa@mail.ru"
 # Application definition
 AUTH_USER_MODEL = 'reviews.User'
 
-#settings_module = os.environ['DJANGO_SETTINGS_MODULE'] = 'api_yamdb.settings'
+# settings_module = os.environ['DJANGO_SETTINGS_MODULE'] = 'api_yamdb.settings'
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -114,7 +114,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-#STATICFILES_DIRS = ((BASE_DIR / 'static/'),)
+# STATICFILES_DIRS = ((BASE_DIR / 'static/'),)
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MEDIA_URL = '/media/'
