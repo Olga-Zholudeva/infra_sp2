@@ -43,6 +43,20 @@ python3 manage.py runserver
 - Использовать проект можно при помощи Postman
 - После запуска проекта документация к API будет доступна по адресу http://127.0.0.1:8000/redoc/
 
+### Запуск проекта с помщью Docker:
+ - Создайте и запустите образы, контейнеры и тома с помощью:
+ docker-compose up
+- Выполните миграции:
+docker-compose exec web python manage.py migrate
+- Загрузите статику:
+docker-compose exec web python manage.py collectstatic --no-input
+- Создайте суперюзера для управления через страницу администратора
+docker-compose exec web python manage.py createsuperuser
+- Остановка работы контейнеров без их удаления:
+docker-compose stop
+- Запуск оставновленных контейнеров
+docker-compose start
+
 ### Примеры запросов для неавторизованных пользователей:
 
 ### Запрос на получение списка всех произведений:

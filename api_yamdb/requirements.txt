@@ -1,4 +1,5 @@
 #asgiref==3.2.10
+python-dotenv==0.21.0
 requests==2.26.0
 Django==3.2
 djangorestframework==3.12.4
@@ -10,5 +11,5 @@ psycopg2-binary==2.8.6
 pytz==2020.1
 sqlparse==0.3.1
 pytest==6.2.5
-pytest-pythonpath
-pytest-django
+pytest-pythonpath==0.7.4
+pytest-django==4.5.2
